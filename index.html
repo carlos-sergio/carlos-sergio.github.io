@@ -2,11 +2,18 @@
 <html>
   <head>
     
+    
 
     <meta charset="UTF-8">
+    <script type="text/javascript" src="topFunction.js"></script>
+
+
+    
     <link rel="shortcut icon" type="image/png" href="icon.png">
+
+  
       
-    <title>Portfólio CS</title>
+    <title>PORTIFÓLIO CS</title>
     <style>
       .profile-image {
         width: 50px;
@@ -20,6 +27,49 @@
     
   <link rel="stylesheet" href="path/to/your/icon-file.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+
+   <!--- código para retornar ao topo da page--> 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Voltar ao topo</button>
+<script>
+// Quando o usuário rola para baixo 20 pixels da página, mostre o botão
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Quando o usuário clica no botão, volte para o topo da página
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<style>
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  #myBtn:hover {
+    background-color: #555;
+  }
+</style>  
   </head>
   <body>
     <header>
@@ -31,7 +81,29 @@
             
            Carlos Sérgio
         
-         
+  
+           <style>
+            .loader {
+              border: 16px solid rgb(252, 181, 0);
+              border-top: 16px solid #fb4300;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              animation: spin 2s linear infinite;
+              margin-top: -40px;
+
+              position: absolute;
+              left: 633px;
+            }
+            
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            </style>
+            
+            <div class="loader"></div>
+
            <style>
             .icon-container { /*Git*/
               display: inline-block;
@@ -98,22 +170,7 @@
             <div class="icon-container4">
               <i class="fab fa-linkedin"></i>
             </div>
-          </a>
-
-         
-        
-        
-
-
-
-
-
-
-
-
-
-          
-         
+          </a>       
            
 
   
@@ -154,6 +211,66 @@
            para atender às demandas dos negócios. Minha paixão pelo desenvolvimento de software me motiva a buscar novos
             desafios e a crescer profissionalmente.
         </p>
+        <style>
+          li {
+            line-height: 2;
+          }
+        </style>
+        
+        <details>
+          <summary><i class="fas fa-folder"></i><strong>Clique aqui e veja mais sobre minhas habilidades</strong></summary>
+          <ul>
+            <li>Analista de Sistemas, suporte de TI, Segurança da
+              informação, Desenvolvedor Back End e experiência em
+              pacote Office.</li>
+              <br>
+           
+              <li>Habilidades técnicas:
+                Python, Java, Web(Html, CSS, JavaScript),
+                manipulação debanco de dados SQL.</li>
+                <br>
+
+            <li>Soft Skills: Colaboração, Flexibilidade em
+              novas demandas, organização e
+              adaptação a tecnologias.
+              resolução de problemas:
+              capacidade de identificar e
+              solucionar problemas técnicos
+              de forma eficiente.</li>
+          </ul>
+        </details>
+        <br>
+        
+        <details>
+          <summary><i class="fas fa-folder"></i><strong>Formação e certificados</strong></summary>
+          <ul>
+            <li>Análise e Desenvolvimento de Sistemas
+              <br>
+              UNIFACEMA Caxias – MA,
+              INICIO: Fevereiro de 2017 -Fim: Junho de 2019
+              </li>
+              <br>
+            
+
+              <li> Python 3 do básico ao avançado.
+                <br>
+                Udemy - 2021 </li>
+                <br>
+
+                <li> Java – Programação Orientada a Objetos
+                  <br>
+                  Udemy - 2022</li>
+                  </ul>
+                  </details>
+                  <br>
+                  <details><summary><i class="fas fa-file-pdf"></i><strong>Para baixar meu currículo, clique aqui</strong></summary>
+                  <ul>
+                    <li>
+                      <a href="Currículo Carlos Sérgio 2023.pdf" download>Baixar arquivo</a>
+                    </li>
+                  </ul>
+                  </details>
+
       </section>
       <section id="projects">
         <h2>Projetos</h2>
