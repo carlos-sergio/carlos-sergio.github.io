@@ -10,8 +10,32 @@
 
     
     <link rel="shortcut icon" type="image/png" href="icon.png">
+"<!"- teste "->""
+ <a href="#" id="link">Clique aqui</a>
+<div id="loader2" style="display:none;">Carregando...</div>
 
-  
+
+<style> 
+ /* Define a largura máxima da página */
+ .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      /* Quando a tela ficar menor que 600 pixels, ocorre o "responsive breakpoint" */
+      @media (max-width: 600px) {
+        /* Redimensiona o tamanho da fonte */
+        body {
+          font-size: 14px;
+        }
+        
+        /* Redimensiona a largura da seção */
+        .container {
+          width: 90%;
+        }
+      }
+
+</style>  
       
     <title>PORTIFÓLIO CS</title>
     <style>
@@ -77,32 +101,13 @@ function topFunction() {
         <img src="profile.jpg" style="border-radius: 50%; width: 100px; height: 100px; margin-right: 10px;">
       
         <h1 style= "text-align: left; color: rgb(252, 181, 0);">
-        
+      
+          <span class="loader"></span>
             
            Carlos Sérgio
         
   
-           <style>
-            .loader {
-              border: 16px solid rgb(252, 181, 0);
-              border-top: 16px solid #fb4300;
-              border-radius: 50%;
-              width: 20px;
-              height: 20px;
-              animation: spin 2s linear infinite;
-              margin-top: -40px;
-
-              position: absolute;
-              left: 633px;
-            }
-            
-            @keyframes spin {
-              0% { transform: rotate(0deg); }
-              100% { transform: rotate(360deg); }
-            }
-            </style>
-            
-            <div class="loader"></div>
+          
 
            <style>
             .icon-container { /*Git*/
@@ -218,7 +223,7 @@ function topFunction() {
         </style>
         
         <details>
-          <summary><i class="fas fa-folder"></i><strong>Clique aqui e veja mais sobre minhas habilidades</strong></summary>
+          <summary><i class="fas fa-folder"></i><strong>Habilidades</strong></summary>
           <ul>
             <li>Analista de Sistemas, suporte de TI, Segurança da
               informação, Desenvolvedor Back End e experiência em
@@ -263,10 +268,10 @@ function topFunction() {
                   </ul>
                   </details>
                   <br>
-                  <details><summary><i class="fas fa-file-pdf"></i><strong>Para baixar meu currículo, clique aqui</strong></summary>
+                  <details><summary><i class="fas fa-file-pdf"></i><strong>Para baixar meu currículo, clique no link desse diretório.</strong></summary>
                   <ul>
                     <li>
-                      <a href="Currículo Carlos Sérgio 2023.pdf" download>Baixar arquivo</a>
+                      <a href="Currículo Carlos Sérgio 2023.pdf" download>Baixar Currículo</a>
                     </li>
                   </ul>
                   </details>
