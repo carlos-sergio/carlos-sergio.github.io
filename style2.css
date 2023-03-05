@@ -1,0 +1,42 @@
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #8161b6;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header img {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .content p {
+    margin-bottom: 10px;
+  }
+  
+  .content strong {
+    width: 100px;
+    display: inline-block;
+  }
+  
+  p {
+    color: rgb(242, 239, 239);
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  h2 {
+    color: gold;
+    font-family: 'Roboto', sans-serif;
+
+    
+  }
+  
